@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:theme="@style/NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minHeight="?attr/actionBarSize"
+                android:paddingLeft="8dp"
+                android:theme="@style/AppTheme.SearchBar"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetStart="0dp"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                <ImageButton
+                    android:id="@+id/imgbtnExitSearch"
+                    style="@style/FlatRippleCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/general_btn_exit_search"
+                    android:padding="8dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_arrow_back_white"
+                    android:tint="@color/colorPrimary" />
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/searchMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="@string/general_search_hint"
+                    app:defaultQueryHint="@string/general_search_hint"
+                    app:iconifiedByDefault="false"
+                    app:searchHintIcon="@null"
+                    app:searchIcon="@null" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <View
+                style="@style/DividerLight"
+                android:layout_alignParentBottom="true" />
+
+            <FrameLayout
+                android:id="@+id/flSearchSelectionHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+                <include layout="@layout/toolbar_main_selection_header" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/flSearchContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+</LinearLayout>

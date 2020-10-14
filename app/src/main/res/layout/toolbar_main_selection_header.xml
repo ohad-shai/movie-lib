@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbarSelection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSelectionBackground"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/AppTheme.SelectionMode"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <ImageButton
+        android:id="@+id/imgbtnClose"
+        style="@style/FlatRippleCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/general_hint_exit_selection"
+        android:padding="8dp"
+        android:scaleType="center"
+        android:src="@mipmap/ic_arrow_back_white" />
+
+    <TextView
+        android:id="@+id/txtSelectionTitle"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        tools:ignore="RtlHardcoded" />
+
+</android.support.v7.widget.Toolbar>

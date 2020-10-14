@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/general_discover">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navInTheaters"
+                    android:icon="@mipmap/ic_in_theaters"
+                    android:title="@string/general_in_theaters" />
+                <item
+                    android:id="@+id/navPopularMovies"
+                    android:icon="@mipmap/ic_popular"
+                    android:title="@string/general_popular" />
+                <item
+                    android:id="@+id/navUpcomingMovies"
+                    android:icon="@mipmap/ic_upcoming"
+                    android:title="@string/general_upcoming" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/main_sidebar_my_collection">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navWishlist"
+                    android:icon="@mipmap/ic_wishlist"
+                    android:title="@string/general_wishlist" />
+                <item
+                    android:id="@+id/navMyMovies"
+                    android:icon="@mipmap/ic_my_movies"
+                    android:title="@string/general_my_movies" />
+                <item
+                    android:id="@+id/navMyActors"
+                    android:icon="@mipmap/ic_my_actors"
+                    android:title="@string/general_my_actors" />
+                <item
+                    android:id="@+id/navMyDirectors"
+                    android:icon="@mipmap/ic_my_directors"
+                    android:title="@string/general_my_directors" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardMovie"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:foreground="@drawable/bright_ripple"
+    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#444"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/image_medium_width"
+                android:layout_height="@dimen/image_medium_height"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/imgMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/colorContent"
+                    android:contentDescription="@string/movie_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_movie_image" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#363636"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="6dp">
+
+                        <TextView
+                            android:id="@+id/lblMovieTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:textColor="#fff"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lblMovieYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:textColor="#ccc"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblMovieGenres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:lines="1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="#999"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/lblMoviePlot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="1dp"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:lines="2"
+                            android:textColor="#ddd"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlHardcoded" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View style="@style/DividerDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="0"
+                    android:background="#363636"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="3dp">
+
+                        <ImageView
+                            android:id="@+id/imgStar"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:contentDescription="@string/general_rating"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/imdb_star" />
+
+                        <TextView
+                            android:id="@+id/lblVoteAverage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/general_msg_unavailable"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginStart="3dp"
+                            android:text="/ 10"
+                            android:textColor="#aaa"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,SmallSp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="3dp">
+
+                        <RatingBar
+                            android:id="@+id/ratingUser"
+                            style="@style/MovieRatingBarSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="0"
+                            android:stepSize="0.5" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal"
+                        android:paddingEnd="4dp"
+                        android:paddingRight="4dp">
+
+                        <ImageButton
+                            android:id="@+id/imgbtnMovieFavorite"
+                            style="@style/BrightRippleCircle"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:contentDescription="@string/movie_favorite"
+                            android:paddingBottom="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="8dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="8dp"
+                            android:scaleType="center"
+                            android:src="@mipmap/ic_favorite_black"
+                            android:tint="#888" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnMovieWatched"
+                            style="@style/BrightRippleCircle"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="0"
+                            android:contentDescription="@string/movie_watched"
+                            android:paddingBottom="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="8dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="8dp"
+                            android:scaleType="center"
+                            android:src="@mipmap/ic_eye_black"
+                            android:tint="#888" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSelection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_background_style"
+            android:visibility="gone">
+
+            <View
+                style="@style/DividerDark"
+                android:layout_alignParentTop="true"
+                android:background="#333" />
+
+            <CheckBox
+                android:id="@+id/chkSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:scaleX="1.25"
+                android:scaleY="1.25" />
+
+            <View
+                style="@style/DividerDark"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

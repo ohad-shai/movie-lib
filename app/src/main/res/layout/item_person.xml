@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardPerson"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:foreground="@drawable/bright_ripple"
+    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardElevation="0dp"
+    card_view:cardMaxElevation="0dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#555"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/image_small_width"
+            android:layout_height="@dimen/image_small_height"
+            android:layout_marginRight="2dp"
+            android:background="#222">
+
+            <ImageView
+                android:id="@+id/imgPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#555"
+                android:contentDescription="@string/person_image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/no_person_image" />
+
+            <View
+                style="@style/DividerDark"
+                android:layout_alignParentBottom="true"
+                android:background="#888" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#363636"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageButton
+                android:id="@+id/imgbtnFavoritePerson"
+                style="@style/BrightRippleCircle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:contentDescription="@string/general_favorite"
+                android:padding="8dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_favorite_black"
+                android:tint="#888"
+                tools:ignore="InefficientWeight" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSelection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_background_style"
+        android:visibility="gone">
+
+        <View
+            style="@style/DividerDark"
+            android:layout_alignParentTop="true"
+            android:background="#333" />
+
+        <CheckBox
+            android:id="@+id/chkSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:scaleX="1.25"
+            android:scaleY="1.25" />
+
+        <View
+            style="@style/DividerDark"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

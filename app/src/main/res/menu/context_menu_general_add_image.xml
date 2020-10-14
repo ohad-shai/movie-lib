@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionDefault"
+        android:title="@string/general_default" />
+
+    <item
+        android:id="@+id/actionFromGallery"
+        android:title="@string/general_from_gallery" />
+
+    <item
+        android:id="@+id/actionCamera"
+        android:title="@string/general_camera" />
+
+</menu>

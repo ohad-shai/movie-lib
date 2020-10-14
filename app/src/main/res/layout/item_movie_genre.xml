@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="14dp"
+    android:layout_marginTop="14dp"
+    android:background="#ddd">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_ripple_rounded"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/txtGenreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="2dp"
+            android:scaleY="0.92"
+            android:textColor="#000"
+            android:textSize="19sp" />
+
+        <ImageButton
+            android:id="@+id/imgbtnRemove"
+            style="@style/FlatRippleCircle"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/general_btn_remove"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:scaleY="0.92"
+            app:srcCompat="@mipmap/ic_close_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

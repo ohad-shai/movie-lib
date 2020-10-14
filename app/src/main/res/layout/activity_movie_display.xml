@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorBackground"
+    tools:context=".ui.activities.MovieDisplayActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutTrailer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#000"
+                android:visibility="visible">
+
+                <VideoView
+                    android:id="@+id/videoTrailer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/progressTrailer"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlTrailerPlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    android:visibility="visible">
+
+                    <ImageButton
+                        android:id="@+id/imgbtnTrailerPlay"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bright_ripple_circle"
+                        android:contentDescription="@string/movie_image"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:paddingRight="14dp"
+                        android:paddingLeft="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_big_play_black"
+                        android:tint="@color/colorAccent" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/DividerDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="1dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/image_large_width"
+                        android:layout_height="@dimen/image_large_height"
+                        android:layout_marginRight="1dp"
+                        android:background="#444"
+                        android:padding="1dp"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:id="@+id/imgMovie"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#000"
+                            android:contentDescription="@string/movie_image"
+                            android:padding="1dp"
+                            android:scaleType="fitCenter" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/DividerDark" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/general_rating"
+                            android:textColor="#aaa"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgStar"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:contentDescription="@string/general_rating"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/imdb_star"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/lblVoteAverage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/imgStar"
+                            android:layout_toRightOf="@+id/imgStar"
+                            android:text="@string/general_msg_unavailable"
+                            android:textColor="#eee"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toEndOf="@+id/lblVoteAverage"
+                            android:layout_toRightOf="@+id/lblVoteAverage"
+                            android:text="/ 10"
+                            android:textColor="#aaa"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/DividerDark" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        tools:ignore="InefficientWeight">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="10dp"
+                            android:text="@string/general_your_rating"
+                            android:textColor="#ccc"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            android:id="@+id/ratingUser"
+                            style="@style/AddMovieRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:numStars="5"
+                            android:rating="0"
+                            android:stepSize="0.5" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/DividerDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imgbtnFavoriteMovie"
+                            style="@style/BrightRippleCircle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:contentDescription="@string/movie_favorite"
+                            android:padding="12dp"
+                            android:scaleType="center"
+                            android:src="@mipmap/ic_favorite_black"
+                            android:tint="#eee"
+                            tools:ignore="RtlHardcoded" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnIsWatched"
+                            style="@style/BrightRippleCircle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:contentDescription="@string/movie_watched"
+                            android:padding="12dp"
+                            android:scaleType="center"
+                            android:src="@mipmap/ic_eye_black"
+                            android:tint="#eee"
+                            tools:ignore="RtlHardcoded" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/DividerDarkVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="6dp">
+
+                        <TextView
+                            android:id="@+id/lblMovieTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:textColor="#fff"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lblMovieYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:textColor="#ccc"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblMovieGenres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="#999"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:id="@+id/scrollViewMoviePlot"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fillViewport="true"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:id="@+id/lblMoviePlot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="12dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:textColor="#eee"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/DividerDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:minHeight="100dp">
+
+                <RelativeLayout
+                    android:id="@+id/castTitleBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#181818">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/general_cast"
+                        android:textColor="#aaa"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ProgressBar
+                        android:id="@+id/progressCast"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:indeterminateTint="#555"
+                        android:visibility="visible"
+                        tools:ignore="UnusedAttribute" />
+
+                    <LinearLayout
+                        android:id="@+id/llShowAllCast"
+                        style="@style/BrightRipple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:visibility="gone"
+                        tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:text="@string/general_btn_show_all"
+                            android:textAllCaps="true"
+                            android:textColor="#ddd"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:contentDescription="@string/general_btn_show_all"
+                            android:scaleY="0.8"
+                            android:src="@mipmap/ic_arrow_forward_white_24dp"
+                            android:tint="#ddd" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/castTitleBar"
+                    android:clipToPadding="false"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/lblCastMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="25dp"
+                    android:text="@string/movie_loading_cast"
+                    android:textColor="#555"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View style="@style/DividerDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:minHeight="100dp">
+
+                <RelativeLayout
+                    android:id="@+id/crewTitleBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#181818">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/general_crew"
+                        android:textColor="#aaa"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ProgressBar
+                        android:id="@+id/progressCrew"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:indeterminateTint="#555"
+                        android:visibility="visible"
+                        tools:ignore="UnusedAttribute" />
+
+                    <LinearLayout
+                        android:id="@+id/llShowAllCrew"
+                        style="@style/BrightRipple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:visibility="gone"
+                        tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:text="@string/general_btn_show_all"
+                            android:textAllCaps="true"
+                            android:textColor="#ddd"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:contentDescription="@string/general_btn_show_all"
+                            android:scaleY="0.8"
+                            android:src="@mipmap/ic_arrow_forward_white_24dp"
+                            android:tint="#ddd" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCrew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crewTitleBar"
+                    android:clipToPadding="false"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/lblCrewMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="25dp"
+                    android:text="@string/movie_loading_crew"
+                    android:textColor="#555"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/flAddMovieContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:visibility="invisible"
+        tools:ignore="RtlHardcoded">
+
+        <include layout="@layout/movie_add_to_layout" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

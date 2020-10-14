@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/actionEdit"
+        android:icon="@mipmap/ic_edit_white"
+        android:title="@string/general_edit"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionShare"
+        android:icon="@mipmap/ic_share_white"
+        android:title="@string/general_share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionDelete"
+        android:icon="@mipmap/ic_delete_white"
+        android:title="@string/general_delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionSelectAll"
+        android:title="@string/general_select_all"
+        app:showAsAction="never" />
+
+</menu>
