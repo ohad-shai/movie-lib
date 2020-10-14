@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ohadshai.movielib">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/movielib_logo"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <!-- Enables Samsung's popup window -->
+        <meta-data
+            android:name="com.samsung.android.sdk.multiwindow.enable"
+            android:value="true" />
+
+        <!-- Activities -->
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:label="@string/general_settings"
+            android:theme="@style/AppTheme.Settings" />
+        <activity
+            android:name=".ui.activities.MovieCreateActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/movie_create_activity_title"
+            android:parentActivityName=".ui.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ohadshai.movielib.ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.MovieDisplayActivity"
+            android:label="@string/movie_display_activity_title" />
+        <activity
+            android:name=".ui.activities.FullMovieCastActivity"
+            android:parentActivityName=".ui.activities.MovieDisplayActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ohadshai.movielib.ui.activities.MovieDisplayActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.FullMovieCrewActivity"
+            android:parentActivityName=".ui.activities.MovieDisplayActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ohadshai.movielib.ui.activities.MovieDisplayActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.PersonDisplayActivity"
+            android:label="@string/person_display_activity_title" />
+        <activity
+            android:name=".ui.activities.FullPersonSeenOnCastActivity"
+            android:parentActivityName=".ui.activities.PersonDisplayActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ohadshai.movielib.ui.activities.PersonDisplayActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.FullPersonSeenOnCrewActivity"
+            android:parentActivityName=".ui.activities.PersonDisplayActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ohadshai.movielib.ui.activities.PersonDisplayActivity" />
+        </activity>
+
+        <!-- Services -->
+        <service
+            android:name=".services.LogUserService"
+            android:exported="false" />
+        <service
+            android:name=".services.GetGenresListService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
