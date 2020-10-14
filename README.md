@@ -2,7 +2,7 @@
 
 Manage and organize your movie library, search for movies, build your own library, watch trailers, rate movies, and more.
 
-Developed as a final project in the Android mobile development course in John Bryce college.
+Developed as a final project in the Android Mobile Development course in John Bryce college.
 
 **Project focused on:**
 - Basic Android Programming
