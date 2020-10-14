@@ -6,7 +6,7 @@ Developed as a final project in the Android Mobile Development course in John Br
 
 **Project focused on:**
 - Basic Android Programming
-- Working with web services
+- Working with Web Services
 - UI & UX
 
 ### Images:
