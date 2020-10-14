@@ -1,0 +1,257 @@
+<resources>
+    <!--=============================================== Application ============================================================-->
+    <string name="app_name">MovieLib</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="app_about_content_paragraph_1">\"MovieLib\" (Movie Library) allows you to manage and organize your movie library, search for movies, build your own board, watch trailers, rate movies, and more.</string>
+    <string name="app_about_content_paragraph_2">The application was first developed as a project for \"John Bryce\" college, since then many features has been added due to requests of users.</string>
+    <string name="app_about_credits_content">Application uses the \"TMDB API\" service.</string>
+
+    <!--=============================================== Activities ===========================================================-->
+    <!-- Activity: Main -->
+    <!-- >>> Sidebar: Main -->
+    <string name="main_sidebar_my_collection">My Collection</string>
+
+    <!-- Activity: Movie Create -->
+    <string name="movie_create_activity_title">Add Movie</string>
+    <string name="movie_create_select_movie_genres">Select movie genres:</string>
+
+    <!-- Activity: Movie Edit -->
+    <string name="movie_edit_activity_title">Edit Movie</string>
+
+    <!-- Activity: Movie Select -->
+    <string name="movie_select_activity_title">Select Movie</string>
+
+    <!-- Activity: Movie Display -->
+    <string name="movie_display_activity_title">Movie Display</string>
+    <string name="movie_display_director">Director:</string>
+    <string name="movie_display_trailer_error">Sorry, this video is not supported…</string>
+
+    <!-- Activity: Person Display -->
+    <string name="person_display_activity_title">Person Display</string>
+
+    <!-- Activity: Settings -->
+    <string name="settings_language_title">Language</string>
+    <string name="settings_languages_notice">Some languages are partially supported…</string>
+    <string name="settings_region_title">Region</string>
+    <string name="settings_regions_notice">Some regions are partially supported…</string>
+    <string name="settings_autoplay_trailers_title">Auto-play trailers</string>
+    <string name="settings_delete_all_data_title">Delete all data</string>
+    <string name="settings_delete_all_data_summary">Select folders to delete all the data</string>
+    <string name="settings_delete_all_data_dialog_title">Delete all data from:</string>
+    <string name="settings_delete_all_data_msg_no_delete">No data deleted.</string>
+    <string name="settings_delete_all_data_msg_deleted">All data deleted from:</string>
+
+    <!--================================================ Fragments ===========================================================-->
+    <!-- Fragment: In Theaters -->
+    <string name="in_theaters_fragment_title">In Theaters</string>
+
+    <!-- Fragment: Popular Movies -->
+    <string name="popular_movies_fragment_title">Popular Movies</string>
+
+    <!-- Fragment: Upcoming Movies -->
+    <string name="upcoming_movies_fragment_title">Upcoming Movies</string>
+
+    <!-- Fragment: Wishlist -->
+    <string name="wishlist_fragment_title">Wishlist</string>
+    <string name="wishlist_not_found">Wishlist is empty.\nClick to add.</string>
+
+    <!-- Fragment: My Movies -->
+    <string name="movies_fragment_title">My Movies</string>
+    <string name="movies_not_found">No movies found.\nClick to add.</string>
+
+    <!-- Fragment: My Actors -->
+    <string name="actors_fragment_title">My Actors</string>
+    <string name="actors_not_found">No actors found.\nClick to add.</string>
+
+    <!-- Fragment: My Directors -->
+    <string name="directors_fragment_title">My Directors</string>
+    <string name="directors_not_found">No directors found.\nClick to add.</string>
+
+    <!--================================================= Dialogs =========================================================-->
+    <!-- Dialog: AddManualOrSelectDialog -->
+    <string name="dialog_add_movie_action_create_desc">Create a movie manually</string>
+    <string name="dialog_add_movie_action_select_desc">Select a movie from the web</string>
+
+    <!-- Dialog: AddMovieGenreDialog -->
+    <string name="dialog_add_movie_genre_title">Add Genre</string>
+    <string name="dialog_add_movie_genre_name">Genre Name</string>
+    <string name="dialog_add_movie_genre_validation_empty">Enter the genre name.</string>
+    <string name="dialog_add_movie_genre_validation_exists">Genre already exists.</string>
+
+    <!-- Dialog: NetworkErrorDialog -->
+    <string name="dialog_network_error_title">Network error</string>
+    <string name="dialog_network_error_message">Please turn on network connection to proceed.</string>
+
+    <!-- Dialog: SortAndFilterDialog -->
+    <string name="dialog_sort_a_to_z">A to Z</string>
+    <string name="dialog_sort_z_to_a">Z to A</string>
+    <string name="dialog_sort_high_to_low">High to Low</string>
+    <string name="dialog_sort_low_to_high">Low to High</string>
+    <string name="dialog_sort_most_recent">Most Recent</string>
+    <string name="dialog_sort_oldest_first">Oldest First</string>
+    <string name="dialog_sort_most_popular">Most Popular</string>
+    <string name="dialog_sort_most_unpopular">Most Unpopular</string>
+
+    <!--================================================== General ========================================================-->
+    <!-- Generals -->
+    <string name="general_general">General</string>
+    <string name="general_actions">Actions</string>
+    <string name="general_about">About</string>
+    <string name="general_settings">Settings</string>
+    <string name="general_credits">Credits</string>
+    <string name="general_support">Support</string>
+    <string name="general_rate_app">Rate this app</string>
+    <string name="general_tell_a_friend">Tell a friend about this app</string>
+    <string name="general_search">Search</string>
+    <string name="general_sort_and_filter">Sort &amp; Filter</string>
+    <string name="general_sort_by">Sort by</string>
+    <string name="general_filter_by">Filter by</string>
+    <string name="general_discover">Discover</string>
+    <string name="general_in_theaters">In Theaters</string>
+    <string name="general_popular">Popular</string>
+    <string name="general_upcoming">Upcoming</string>
+    <string name="general_favorites">Favorites</string>
+    <string name="general_not_watched">Not Watched</string>
+    <string name="general_not_rated">Not Rated</string>
+    <string name="general_add_movie">Add Movie</string>
+    <string name="general_my_movies">My Movies</string>
+    <string name="general_wishlist">Wishlist</string>
+    <string name="general_my_actors">My Actors</string>
+    <string name="general_my_directors">My Directors</string>
+    <string name="general_add_image">Add Image</string>
+    <string name="general_change_image">Change Image</string>
+    <string name="general_add">Add</string>
+    <string name="general_done">Done</string>
+    <string name="general_autocomplete">AutoComplete</string>
+    <string name="general_clear_all">Clear All</string>
+    <string name="general_default">Default</string>
+    <string name="general_from_gallery">From Gallery</string>
+    <string name="general_camera">Camera</string>
+    <string name="general_delete">Delete</string>
+    <string name="general_select_all">Select All</string>
+    <string name="general_selected">selected</string>
+    <string name="general_share">Share</string>
+    <string name="general_share_via">Share via</string>
+    <string name="general_cast">Cast</string>
+    <string name="general_crew">Crew</string>
+    <string name="general_name">Name</string>
+    <string name="general_biography">Biography</string>
+    <string name="general_search_hint">Search…</string>
+    <string name="general_search_movies_hint">Search movies…</string>
+    <string name="general_search_people_hint">Search people…</string>
+    <string name="general_character">Character</string>
+    <string name="general_department">Department</string>
+    <string name="general_job">Job</string>
+    <string name="general_favorite">Favorite</string>
+    <string name="general_loading">Loading…</string>
+    <string name="general_website">Website</string>
+    <string name="general_facebook">Facebook</string>
+    <string name="general_twitter">Twitter</string>
+    <string name="general_instagram">Instagram</string>
+    <string name="general_seen_on_cast">Seen on (Cast)</string>
+    <string name="general_seen_on_crew">Seen on (Crew)</string>
+    <string name="general_title">Title</string>
+    <string name="general_year">Year</string>
+    <string name="general_your_rating">Your Rating</string>
+    <string name="general_rating">Rating</string>
+    <string name="general_date_added">Date Added</string>
+    <string name="general_popularity">Popularity</string>
+    <string name="general_filter">Filter</string>
+    <string name="general_age">Age</string>
+    <string name="general_hint_exit_selection">Exit Selection</string>
+    <string name="general_edit">Edit</string>
+
+    <!-- General Buttons -->
+    <string name="general_btn_ok">OK</string>
+    <string name="general_btn_cancel">Cancel</string>
+    <string name="general_btn_proceed">Proceed</string>
+    <string name="general_btn_close">Close</string>
+    <string name="general_btn_remove">Remove</string>
+    <string name="general_btn_yes">Yes</string>
+    <string name="general_btn_no">No</string>
+    <string name="general_btn_undo">Undo</string>
+    <string name="general_btn_create">Create</string>
+    <string name="general_btn_manual">Manual</string>
+    <string name="general_btn_select">Select</string>
+    <string name="general_btn_wait">Wait</string>
+    <string name="general_btn_save">Save</string>
+    <string name="general_btn_add_to_wishlist">Add to Wishlist</string>
+    <string name="general_btn_add_to_my_movies">Add to My Movies</string>
+    <string name="general_btn_add_to_my_actors">Add to My Actors</string>
+    <string name="general_btn_add_to_my_directors">Add to My Directors</string>
+    <string name="general_add_to_cast">Add to Cast</string>
+    <string name="general_add_to_crew">Add to Crew</string>
+    <string name="general_btn_exit_search">Exit Search</string>
+    <string name="general_btn_show_all">Show All</string>
+
+    <!-- General Messages -->
+    <string name="general_msg_unavailable">N/A</string>
+    <string name="general_msg_no_results">No Results.</string>
+    <string name="general_msg_no_internet">No internet connection, please </string>
+    <string name="general_msg_are_you_sure">Are you sure?</string>
+    <string name="general_msg_deleted">deleted</string>
+    <string name="general_msg_warning">Warning</string>
+    <string name="general_msg_warning_all_data_delete">This will delete all of your data.</string>
+    <string name="general_msg_something_went_wrong">Oops… something went wrong.</string>
+    <string name="general_msg_no_network_connection_turn_on">No network connection.\nClick to turn on.</string>
+    <string name="general_msg_no_network_connection">No network connection.</string>
+    <string name="general_msg_unfavorited">unfavorited</string>
+    <string name="general_msg_will_be_available_soon">Will be available soon…</string>
+    <string name="general_msg_seen_on">Seen on</string>
+    <string name="general_msg_google_play_not_found">Install Google Play to perform this action.</string>
+    <string name="general_msg_add_movie_to_folder">Add the movie to a folder first.</string>
+    <string name="general_msg_add_person_to_folder">Add the person to a folder first.</string>
+    <string name="general_msg_cast_of">Cast of:</string>
+    <string name="general_msg_crew_of">Crew of:</string>
+    <string name="general_msg_seen_on_cast">Seen on (Cast):</string>
+    <string name="general_msg_seen_on_crew">Seen on (Crew):</string>
+    <string name="general_msg_watched_and_wishlist">\"Watched\" mark can not be applied in the \"Wishlist\" folder.</string>
+    <string name="general_msg_rate_movie_in_my_movies">You can only rate movies in the \"My Movies\" folder.</string>
+    <string name="general_msg_nothing_to_show_here">Nothing to show here.</string>
+    <string name="general_msg_no_movies_answer_filter">No movies answer this filter.</string>
+    <string name="general_msg_no_actors_answer_filter">No actors answer this filter.</string>
+    <string name="general_msg_no_directors_answer_filter">No directors answer this filter.</string>
+    <string name="general_msg_please_wait">Please wait…</string>
+
+    <!-- Movie Generals -->
+    <string name="movielib_logo">MovieLib Application Logo</string>
+    <string name="movie_plot">Plot</string>
+    <string name="movie_genres">Genres</string>
+    <string name="movie_watched">Watched Movie</string>
+    <string name="movie_genres_not_found">No Genres.\nClick to add.</string>
+    <string name="movie_cast_not_found">No cast.\nClick to add.</string>
+    <string name="movie_crew_not_found">No crew.\nClick to add.</string>
+    <string name="movie_validation_title_empty">Enter the movie title.</string>
+    <string name="movie_validation_year_empty">Enter the movie year.</string>
+    <string name="movie_validation_movie_exists">Movie already exists.</string>
+    <string name="movie_validation_year_numeric">Year must be a numeric value.</string>
+    <string name="movie_validation_genres_empty">Enter at least one genre.</string>
+    <string name="movie_favorite">Favorite Movie</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="movie_search_hint">Search movie</string>
+    <string name="movie_no_cast">No cast.</string>
+    <string name="movie_loading_cast">Loading cast…</string>
+    <string name="movie_no_crew">No crew.</string>
+    <string name="movie_loading_crew">Loading crew…</string>
+    <string name="movie_no_movies">No movies.</string>
+    <string name="play_trailer">Play Trailer</string>
+
+    <!-- Person Generals -->
+    <string name="person_validation_name_empty">Enter the name.</string>
+    <string name="person_image">Person Image</string>
+
+    <!-- Actor Generals -->
+    <string name="actor_validation_empty">Enter the name.</string>
+    <string name="actor_favorite">Favorite Actor</string>
+    <string name="actor_image">Person Image</string>
+
+    <!-- Director Generals -->
+    <string name="director_validation_empty">Enter the director name.</string>
+    <string name="director_favorite">Favorite Director</string>
+    <string name="director_image">Director Image</string>
+
+    <!--================================================== Other =========================================================-->
+    <string name="navigation_drawer_open">Open Menu</string>
+    <string name="navigation_drawer_close">Close Menu</string>
+
+</resources>

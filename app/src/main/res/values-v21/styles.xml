@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--============================================== Base Application Theme ===============================================-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--================================================= ((Ripple)) Styles =================================================-->
+    <style name="FlatRipple">
+        <item name="android:background">@drawable/flat_ripple</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="FlatRippleRounded">
+        <item name="android:background">@drawable/flat_ripple_rounded</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="FlatRippleCircle">
+        <item name="android:background">@drawable/flat_ripple_circle</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="WhiteRipple">
+        <item name="android:background">@drawable/white_ripple</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="BrightRipple">
+        <item name="android:background">@drawable/bright_ripple</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="BrightRippleCircle">
+        <item name="android:background">@drawable/bright_ripple_circle</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="RippleEditText" parent="FullWidthEditText">
+        <item name="android:background">@drawable/edit_text_ripple</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="MaterialDialogButton" parent="FlatRippleRounded">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--=================================================== General Styles ==================================================-->
+
+    <!--=====================================================================================================================-->
+
+</resources>

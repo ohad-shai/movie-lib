@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="languages">
+        <item>Global</item>
+        <item>Arabic</item>
+        <item>Bulgarian</item>
+        <item>Bengali</item>
+        <item>Catalan</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>English</item>
+        <item>English (Australian)</item>
+        <item>English (Great Britain)</item>
+        <item>Spanish</item>
+        <item>Basque</item>
+        <item>Farsi</item>
+        <item>Finnish</item>
+        <item>Filipino</item>
+        <item>French</item>
+        <item>Galician</item>
+        <item>Gujarati</item>
+        <item>Hindi</item>
+        <item>Croatian</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Hebrew</item>
+        <item>Japanese</item>
+        <item>Kannada</item>
+        <item>Korean</item>
+        <item>Lithuanian</item>
+        <item>Latvian</item>
+        <item>Malayalam</item>
+        <item>Marathi</item>
+        <item>Dutch</item>
+        <item>Norwegian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Portuguese (Brazil)</item>
+        <item>Portuguese (Portugal)</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Serbian</item>
+        <item>Swedish</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Thai</item>
+        <item>Tagalog</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Vietnamese</item>
+        <item>Chinese (Simplified)</item>
+        <item>Chinese (Traditional)</item>
+    </string-array>
+    <string-array name="languageValues">
+        <item />
+        <item>ar</item>
+        <item>bg</item>
+        <item>bn</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>de</item>
+        <item>el</item>
+        <item>en-US</item>
+        <item>en-AU</item>
+        <item>en-GB</item>
+        <item>es</item>
+        <item>eu</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fil</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>gu</item>
+        <item>hi</item>
+        <item>hr</item>
+        <item>hu</item>
+        <item>id</item>
+        <item>it</item>
+        <item>he</item>
+        <item>ja</item>
+        <item>kn</item>
+        <item>ko</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>ml</item>
+        <item>mr</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>pt-BR</item>
+        <item>pt-PT</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sr</item>
+        <item>sv</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tl</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>vi</item>
+        <item>zh-CN</item>
+        <item>zh-TW</item>
+    </string-array>
+
+    <string-array name="regions">
+        <item>Global</item>
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Brazil</item>
+        <item>Bulgaria</item>
+        <item>Cambodia</item>
+        <item>Canada</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Czechia</item>
+        <item>Denmark</item>
+        <item>Egypt</item>
+        <item>Estonia</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Kazakhstan</item>
+        <item>Korea</item>
+        <item>Kuwait</item>
+        <item>Latvia</item>
+        <item>Lithuania</item>
+        <item>Macedonia</item>
+        <item>Malaysia</item>
+        <item>Mexico</item>
+        <item>Moldova</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Norway</item>
+        <item>Pakistan</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Serbia</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>South Africa</item>
+        <item>Spain</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Thailand</item>
+        <item>Turkey</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uzbekistan</item>
+        <item>Venezuela</item>
+        <item>Viet Nam</item>
+    </string-array>
+    <string-array name="regionValues">
+        <item />
+        <item>AR</item>
+        <item>AU</item>
+        <item>AT</item>
+        <item>BY</item>
+        <item>BE</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>KH</item>
+        <item>CA</item>
+        <item>CL</item>
+        <item>CN</item>
+        <item>CO</item>
+        <item>CR</item>
+        <item>CZ</item>
+        <item>DK</item>
+        <item>EG</item>
+        <item>EE</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>DE</item>
+        <item>GR</item>
+        <item>HN</item>
+        <item>HK</item>
+        <item>HU</item>
+        <item>IN</item>
+        <item>ID</item>
+        <item>IR</item>
+        <item>IE</item>
+        <item>IL</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KZ</item>
+        <item>KR</item>
+        <item>KW</item>
+        <item>LV</item>
+        <item>LT</item>
+        <item>MK</item>
+        <item>MY</item>
+        <item>MX</item>
+        <item>MD</item>
+        <item>NL</item>
+        <item>NZ</item>
+        <item>NO</item>
+        <item>PK</item>
+        <item>PH</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>PR</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>RS</item>
+        <item>SG</item>
+        <item>SK</item>
+        <item>ZA</item>
+        <item>ES</item>
+        <item>SZ</item>
+        <item>SE</item>
+        <item>CH</item>
+        <item>TW</item>
+        <item>TJ</item>
+        <item>TH</item>
+        <item>TR</item>
+        <item>UA</item>
+        <item>AE</item>
+        <item>GB</item>
+        <item>US</item>
+        <item>UZ</item>
+        <item>VE</item>
+        <item>VN</item>
+    </string-array>
+
+</resources>

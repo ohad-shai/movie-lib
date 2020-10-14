@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#181818</color>
+    <color name="colorAccent">#ffff5733</color>
+    <color name="colorSecondary">#999</color>
+    <color name="colorSearch">#cccccc</color>
+    <color name="colorSelectionBackground">#535353</color>
+    <color name="colorSelectionStatus">#3c3c3c</color>
+    <color name="colorBackground">#202020</color>
+    <color name="colorMenuBackground">#444</color>
+    <color name="colorContent">#333</color>
+    <color name="colorMenuText">#ddd</color>
+    <color name="colorLightBackground">#ddd</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorCream">#eee</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorTransparentBright">#55ffffff</color>
+    <color name="colorPrimaryMaterial">#ffff5733</color>
+    <color name="hoverDark">#22000000</color>
+    <color name="hoverDim">#11000000</color>
+    <color name="hoverLight">#11ffffff</color>
+    <color name="hoverBright">#22ffffff</color>
+    <color name="colorFacebook">#ff3b5998</color>
+    <color name="colorTwitter">#ff55acee</color>
+</resources>

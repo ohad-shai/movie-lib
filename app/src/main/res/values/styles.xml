@@ -1,0 +1,149 @@
+<resources>
+
+    <!--============================================== Base Application Theme ===============================================-->
+    <!-- Main Application Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryMaterial</item>
+        <item name="android:textColorSecondary">@color/colorSecondary</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/AppTheme.ActionMode</item>
+    </style>
+
+    <style name="AppTheme.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="background">@color/colorMenuBackground</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorHint">#aaa</item>
+        <item name="colorControlNormal">#fff</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Search Mode -->
+    <style name="AppTheme.SearchBar" parent="AppTheme">
+        <item name="android:textColorPrimary">#222</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorHint">#999</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Selection Mode -->
+    <style name="AppTheme.SelectionMode" parent="AppTheme">
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:textColorHint">#aaa</item>
+        <item name="colorControlNormal">#fff</item>
+    </style>
+
+    <!-- Settings Theme -->
+    <style name="AppTheme.Settings" parent="AppTheme">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textColorHint">#aaa</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Settings.Dialog</item>
+    </style>
+
+    <style name="AppTheme.Settings.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!--================================================= ((Ripple)) Styles =================================================-->
+    <style name="FlatRipple">
+        <item name="android:background">@drawable/flat_ripple</item>
+    </style>
+
+    <style name="FlatRippleRounded">
+        <item name="android:background">@drawable/flat_ripple_rounded</item>
+    </style>
+
+    <style name="FlatRippleCircle">
+        <item name="android:background">@drawable/flat_ripple_circle</item>
+    </style>
+
+    <style name="WhiteRipple">
+        <item name="android:background">@drawable/white_ripple</item>
+    </style>
+
+    <style name="BrightRipple">
+        <item name="android:background">@drawable/bright_ripple</item>
+    </style>
+
+    <style name="BrightRippleCircle">
+        <item name="android:background">@drawable/bright_ripple_circle</item>
+    </style>
+
+    <style name="RippleEditText" parent="FullWidthEditText">
+        <item name="android:background">@drawable/edit_text_ripple</item>
+    </style>
+
+    <style name="MaterialDialogButton" parent="FlatRippleRounded">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--=================================================== General Styles ==================================================-->
+    <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">20dp</item>
+        <item name="android:background">#fff</item>
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+    </style>
+
+    <style name="AddMovieRatingBar" parent="android:Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_stars</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+    <style name="MovieRatingBarSmall" parent="android:Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_stars_small</item>
+        <item name="android:minHeight">15dip</item>
+        <item name="android:maxHeight">15dip</item>
+    </style>
+
+    <style name="DividerDark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#282828</item>
+    </style>
+
+    <style name="DividerDarkVertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#282828</item>
+    </style>
+
+    <style name="DividerLight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#ccc</item>
+    </style>
+
+    <style name="DividerDarkLightThick">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">#666</item>
+    </style>
+
+    <style name="DividerWhite">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#fff</item>
+    </style>
+
+    <!--=====================================================================================================================-->
+
+</resources>
